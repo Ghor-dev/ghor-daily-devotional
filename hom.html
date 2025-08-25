@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOR Daily Devotional</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 font-sans">
+
+<!-- Navbar -->
+<nav class="bg-blue-700 text-white shadow-lg z-20 relative">
+  <div class="max-w-6xl mx-auto px-4">
+    <div class="flex justify-between items-center py-4">
+      
+      <!-- Logo + Name -->
+      <div class="flex items-center space-x-3">
+        <img src="logo.jpg" alt="GHOR Logo" class="h-10 w-10 object-contain">
+        <span>
+          <div class="text-white-700">
+            <h1 class="text-lg font-bold">GHOR</h1>
+            <p class="text-sm">DAILY DEVOTIONAL</p>
+          </div>
+        </span>
+      </div>
+    
+      <!-- Mobile Menu Button -->
+      <div class="relative md:hidden">
+        <button class="p-4" aria-expanded="false" aria-controls="mobile-menu" title="Open Menu">
+          <svg class="w-6 h-6 fill-current text-white" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2z"/>
+          </svg>
+        </button>
+
+        <!-- Dropdown Content -->
+        <div id="mobile-menu" class="absolute top-12 right-0 bg-blue-700 text-white rounded shadow-lg hidden">
+          <a href="#" class="block px-4 py-2 hover:bg-blue-600">Home</a>
+          <a href="#" class="block px-4 py-2 hover:bg-blue-600">About</a>
+          <a href="#" class="block px-4 py-2 hover:bg-blue-600">Media</a>
+          <a href="#" class="block px-4 py-2 hover:bg-blue-600">Program</a>
+          <a href="#" class="block px-4 py-2 hover:bg-blue-600">Contact</a>
+        </div>
+      </div>
+    
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6" id="mobile-menu">
+        <a href="#" class="hover:underline">Home</a>
+        <a href="#" class="hover:underline">About</a>
+        <a href="#" class="hover:underline">Media</a>
+        <a href="#" class="hover:underline">Program</a>
+        <a href="#" class="hover:underline">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative bg-blue-600 text-white mt-8 z-10">
+  <!-- Background Image -->
+  <div class="absolute inset-0 flex items-center justify-center">
+    <img src="pastor E.jpg" alt="Devotional Background" class="max-h-80 w-auto object-contain opacity-20">
+  </div>
+  <!-- Overlay Content -->
+  <div class="relative max-w-4xl mx-auto text-center py-20">
+    <p class="text-sm">Daily Devotional</p>
+    <h1 class="text-4xl md:text-3xl font-semibold mt-2">
+      Embrace the Journey of Faith with GHOR
+    </h1>
+  </div>
+</section>
+
+<!-- Body: Devotional Cards -->
+<main class="max-w-7xl mx-auto p-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+  
+  <!-- Card Template (reused for each devotional) -->
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">23</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+    
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">22</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">21</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">20</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">19</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">18</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">17</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">16</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">15</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">14</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">13</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+    <div class="bg-white shadow-md rounded-lg overflow-hidden relative">
+    <!-- Vertical Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight">
+      <span class="text-base">12</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <img src="pastor E.jpg" alt="Devotional" class="w-full h-40 object-cover">
+    <div class="p-4">
+      <h2 class="text-lg font-bold mb-2">Devotional Title</h2>
+      <a href="devotional.html" class="text-blue-700 font-semibold hover:underline">Read</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-blue-700 text-white py-6 mt-10">
+  <div class="text-center text-sm">
+    © 2025 GHOR Daily Devotional. All rights reserved.
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
