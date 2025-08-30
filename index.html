@@ -51,21 +51,26 @@
     </div>
   </header>
 
-<!-- Home Hero with Slideshow -->
-<section id="home" class="relative h-screen flex items-center justify-center text-white overflow-hidden">
+<!-- Slideshow Section -->
+<section id="home" class="relative w-full mt-16"> <!-- mt-16 = space for navbar -->
 
-  <!-- Slideshow container -->
-<img src="./images/frank.jpg" 
-     class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+  <!-- Container with aspect ratio (landscape) -->
+  <div class="relative w-full aspect-video overflow-hidden rounded-lg shadow-lg">
 
-<img src="./images/events.jpg" 
-     class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+    <img src="./images/frank.jpg" 
+         class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
 
-<img src="./images/events.jpg" 
-     class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+    <img src="./images/events.jpg" 
+         class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
 
-<img src="./images/b.jpg" 
-     class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+    <img src="./images/events.jpg" 
+         class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+
+    <img src="./images/b.jpg" 
+         class="slide absolute inset-0 w-full h-full object-cover object-center opacity-0 transition-opacity duration-1000" />
+
+  </div>
+</section>
 
 
    
@@ -73,6 +78,8 @@
     <div class="absolute inset-0 bg-black bg-opacity-70"></div>
   </div>
 
+
+  
   <!-- Text overlay -->
   <div class="relative z-10 text-center px-4">
     <h1 class="text-4xl md:text-5xl font-bold">Welcome to God's House of Refuge</h1>
