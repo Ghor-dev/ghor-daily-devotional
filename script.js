@@ -1,16 +1,15 @@
-document.addEventListener('DOMContentLoaded', function() {
-  // Hamburger menu toggle
-  const hamburger = document.querySelector('button[aria-controls="mobile-menu"]');
-  const menu = document.getElementById('mobile-menu');
-  if (hamburger && menu) {
-    menu.classList.add('hidden');
-    hamburger.addEventListener('click', function() {
-      const expanded = hamburger.getAttribute('aria-expanded') === 'true';
-      hamburger.setAttribute('aria-expanded', !expanded);
-      menu.classList.toggle('hidden');
-    });
-  }
 
+document.addEventListener("DOMContentLoaded", () => {
+  const menuBtn = document.getElementById("menu-btn");  // hamburger button
+  const menu = document.getElementById("menu");         // mobile menu
+
+  if (menuBtn && menu) {
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden"); // show/hide menu
+    });
+  } else {
+    console.error("Menu button or menu container not found!");
+  }
   // Slideshow functionality
   const slides = document.querySelectorAll(".slide");
   let currentIndex = 0;
