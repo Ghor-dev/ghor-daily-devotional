@@ -1,101 +1,91 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>About Us — GHOR Ministry</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#ffffff;
-      --panel:#0d47a1;
-      --text:#ffffff;
-      --brand:#1565c0;
-      --brand-2:#1976d2;
-      --radius:14px;
-      --max:900px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--panel);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:var(--brand);text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .container{max-width:var(--max);margin-inline:auto;padding:0 20px}
-    header{background:var(--panel);}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand .logo{background:var(--brand-2);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
-    .brand span{font-weight:800;letter-spacing:.3px;color:var(--text);}
-    .menu{display:flex;gap:22px;align-items:center}
-    .menu a{opacity:.9;color:var(--text);}
-    main{background:var(--bg);padding:40px 0;}
-    h1{color:var(--panel);font-size:2.5rem;margin-bottom:18px;}
-    h2{color:var(--brand);margin-top:32px;}
-    p{color:#222;line-height:1.7;}
-    .about-section{background:#f5f7fa;padding:32px;border-radius:var(--radius);box-shadow:0 4px 24px rgba(21,101,192,.08);}
-    .team{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;margin-top:32px;}
-    .member{background:var(--panel);color:var(--text);padding:18px;border-radius:var(--radius);text-align:center;}
-    .member img{border-radius:50%;width:80px;height:80px;margin-bottom:12px;}
-    footer{background:var(--panel);color:var(--text);padding:24px 0;text-align:center;margin-top:40px;}
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>God's House of Refuge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2e0e6ad54.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <div class="container">
-      <nav class="nav">
-        <div class="brand">
-          <div class="logo">
-           <img src="./images/logo.jpg" alt="God's House of Refuge Logo" class="h-10 w-10 rounded-full">
-          </div>
-          <span>GHOR MINISTRY</span>
-        </div>
-        <div class="menu">
-          <a href="index.html">Home</a>
-          <a href="about us.html">About Us</a>
-          <a href="sermons.html">Sermons</a>
-          <a href="events.html">Events</a>
-          <a href="contact.html">Contact</a>
-        </div>
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./images/logo.jpg" alt="GHOR Logo" class="h-10 w-10 rounded-full">
+        <span class="text-xl font-bold">God's House of Refuge</span>
+      </div>
+
+      <!-- Nav links -->
+      <nav>
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="#home" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="#devotional" class="hover:text-yellow-300">Daily Devotional</a></li>
+          <li><a href="#about" class="hover:text-yellow-300">About Us</a></li>
+          <li><a href="#message" class="hover:text-yellow-300">Message</a></li>
+          <li><a href="#media" class="hover:text-yellow-300">Media</a></li>
+          <li><a href="#give" class="hover:text-yellow-300">Give</a></li>
+        </ul>
       </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden flex flex-col space-y-1 focus:outline-none">
+         <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+      </button>
+       </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+      <ul class="flex flex-col space-y-3 px-4 py-3">
+        <li><a href="#home" class="block hover:text-yellow-300">Home</a></li>
+        <li><a href="#devotional" class="block hover:text-yellow-300">Daily Devotional</a></li>
+        <li><a href="#about" class="block hover:text-yellow-300">About Us</a></li>
+        <li><a href="#message" class="block hover:text-yellow-300">Message</a></li>
+        <li><a href="#media" class="block hover:text-yellow-300">Media</a></li>
+        <li><a href="#give" class="block hover:text-yellow-300">Give</a></li>
+      </ul>
     </div>
+
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <div class="container">
-      <section class="about-section">
-        <h1>About Us</h1>
-        <p>
+    <main>
+    <div class="container mx-auto px-4 py-10">
+      <section class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[380px] sm:min-h-[420px] p-8">
+        <h1 class="text-3xl font-bold text-blue-900 mb-6">About Us</h1>
+        <p class="text-gray-700 mb-6">
           God's House of Refuge (GHOR) Ministry is a vibrant community dedicated to sharing the love, hope, and power of Jesus Christ. Our mission is to reach out, restore, and empower lives through the Word of God, worship, and service.
         </p>
-        <h2>Our Vision</h2>
-        <p>
+        <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-2">Our Vision</h2>
+        <p class="text-gray-700 mb-6">
           To be a beacon of light and refuge, transforming lives and communities for Christ.
         </p>
-        <h2>Our Mission</h2>
-        <p>
+        <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-2">Our Mission</h2>
+        <p class="text-gray-700 mb-6">
           To preach the gospel, nurture spiritual growth, and serve with compassion and excellence.
         </p>
-        <h2>Leadership Team</h2>
-        <div class="team">
-          <div class="member">
-            <img src="pastor.jpg" alt="Pastor E">
-            <strong>Pastor E</strong>
-            <div>Lead Pastor</div>
+        <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-4">Leadership Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div class="bg-blue-900 text-white rounded-lg p-6 flex flex-col items-center shadow">
+            <img src="/images/pastor E.jpg" alt="Pastor Ezekiel" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+            <strong class="text-lg">Pastor Ezekiel</strong>
+            <div class="text-sm mt-1">Founding Pastor </div>
           </div>
-          <div class="member">
-            <img src="assistant.jpg" alt="Assistant Pastor">
-            <strong>Resident Pastor</strong>
-            <div>Associate Pastor</div>
+          <div class="bg-blue-900 text-white rounded-lg p-6 flex flex-col items-center shadow">
+            <img src="/images/pastor dara.jpeg" alt="Pastor Dr. Dara" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+            <strong class="text-lg">Pastor Dr. Dara</strong>
+            <div class="text-sm mt-1">Lead pastor</div>
           </div>
- 
+          <!-- Add more team members here if needed -->
+        </div>
       </section>
     </div>
   </main>
-
-  <!-- Footer -->
-  <footer>
+  
+  <footer class="bg-blue-900 text-white py-6 mt-10 text-center">
     &copy; 2025 GHOR Ministry. All rights reserved.
   </footer>
     <script src="script.js"></script>
