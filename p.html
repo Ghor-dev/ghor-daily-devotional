@@ -1,177 +1,72 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Church/Ministry — Homepage</title>
-  <meta name="description" content="A modern ministry homepage with sermons, events, and giving." />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#ffffff;           /* main background white */
-      --panel:#0d47a1;        /* deep blue for navbar, cards, hero, footer */
-      --muted:#1976d2;        /* accent blue */
-      --text:#ffffff;         /* white text */
-      --brand:#1565c0;        /* blue accent */
-      --brand-2:#1976d2;      /* accent blue */
-      --radius:14px;
-      --shadow:0 10px 30px rgba(21,101,192,.15);
-      --max:1200px;
-    }
-    *{box-sizing:border-box}
-    html,body{margin:0;padding:0;background:var(--bg);color:var(--panel);font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    a{color:var(--text);text-decoration:none}
-    img{max-width:100%;height:auto;display:block}
-    .container{max-width:var(--max);margin-inline:auto;padding:0 20px}
-
-    /* Header/Navbar */
-    header{background:var(--panel);}
-    .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
-    .brand{display:flex;gap:12px;align-items:center}
-    .brand .logo{background:var(--brand-2);width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;}
-    .brand span{font-weight:800;letter-spacing:.3px;color:var(--text);}
-    .menu{display:flex;gap:22px;align-items:center}
-    .menu a{opacity:.9;color:var(--text);}
-    .cta{background:var(--brand);color:var(--text);padding:8px 18px;border-radius:var(--radius);font-weight:600;}
-    .hamburger{display:none;width:40px;height:40px;border:1px solid var(--brand-2);border-radius:10px;align-items:center;justify-content:center;background:transparent;cursor:pointer;}
-    .hamburger span{display:block;width:22px;height:2px;background:var(--text);position:relative}
-    .hamburger span::before,.hamburger span::after{content:"";position:absolute;left:0;width:22px;height:2px;background:var(--text)}
-    .hamburger span::before{top:-6px}.hamburger span::after{top:6px}
-
-    /* Mobile menu */
-    #mobileMenu{display:none;background:var(--panel);}
-    #mobileMenu.open{display:block;padding:12px 0;border-top:1px solid var(--brand-2);}
-    #mobileMenu a{display:block;padding:12px 0;border-bottom:1px dashed var(--brand-2);color:var(--text);}
-
-    /* Hero */
-    .hero{background:var(--panel);}
-    .hero-wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:26px;align-items:center;padding:48px 0}
-    .badge{background:var(--brand-2);color:var(--text);padding:6px 16px;border-radius:var(--radius);font-weight:600;}
-    .hero h1{font-size:clamp(2rem, 5vw, 3.5rem);line-height:1.05;margin:16px 0 12px;color:var(--text);}
-    .hero p{color:var(--brand-2);max-width:52ch}
-    .hero-actions{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
-    .btn{background:var(--brand);color:var(--text);padding:8px 18px;border-radius:var(--radius);font-weight:600;border:none;cursor:pointer;}
-    .btn.alt{background:var(--brand-2);color:var(--text);}
-    .hero-card{background:var(--brand-2);color:var(--text);padding:18px;border-radius:var(--radius);box-shadow:var(--shadow);}
-    .video{background:var(--brand-2);}
-
-    /* Sections */
-    section{padding:36px 0;background:var(--bg);}
-    .section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:14px}
-    .section-head h2{margin:0;font-size:1.6rem;color:var(--panel);}
-    .kicker{color:var(--brand);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.8rem}
-
-    /* Cards */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .card{background:var(--panel);color:var(--text);border-radius:var(--radius);box-shadow:var(--shadow);}
-    .card .body{padding:14px}
-    .meta{display:flex;gap:8px;align-items:center;color:var(--brand-2);font-size:.9rem}
-
-    /* Events */
-    .event{background:var(--panel);}
-    .datebox{display:grid;place-items:center;border:1px solid var(--brand-2);border-radius:10px;padding:8px;background:var(--brand-2);color:var(--text);}
-
-    /* Footer */
-    footer{background:var(--panel);color:var(--text);padding:32px 0;text-align:center;}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GHOR Media</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <div class="container">
-      <nav class="nav">
-        <div class="brand">
-          <div class="logo">
-            <!-- Logo image or icon -->
-            <img src="./images/logo.jpg" alt="Logo">
-          </div>
-          <span>GHOR MINISTRY</span>
-        </div>
-        <div class="menu">
-          <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Sermons</a>
-          <a href="#">Events</a>
-          <a href="#">Contact</a>
-          <a href="#" class="cta">Give</a>
-        </div>
-        <button class="hamburger" aria-label="Open menu" onclick="toggleMobileMenu()">
-          <span></span>
-        </button>
-      </nav>
-      <div id="mobileMenu">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Sermons</a>
-        <a href="#">Events</a>
-        <a href="#">Contact</a>
-        <a href="#" class="cta">Give</a>
-      </div>
-    </div>
-  </header>
+<body class="bg-gray-100">
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-wrap">
-      <div>
-        <div class="badge">Welcome to GHOR</div>
-        <h1>Experience God's Love & Power</h1>
-        <p>Join us for inspiring sermons, uplifting worship, and a community rooted in faith and compassion.</p>
-        <div class="hero-actions">
+  <!-- Media Section -->
+  <section id="media" class="py-12 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-3xl font-bold text-blue-900 mb-8 text-center">Our Media</h2>
+
+      <!-- Video Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         
-          <a href="#" class="btn alt">Plan a Visit</a>
+        <!-- Video 1 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
         </div>
-      </div>
-      <div>
-        <div class="hero-card">
-          <strong>Next Service:</strong><br>
-          Sunday, 9:00am<br>
-          <span class="meta">GHOR Auditorium</span>
+
+        <!-- Video 2 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://youtu.be/-_N9xIVumtc?si=_SHOMXRwuQoQ91mh" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
         </div>
+
+        <!-- Video 3 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 4 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://www.youtube.com/embed/oHg5SJYRHA0?rel=0" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 5 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://www.youtube.com/embed/ysz5S6PUM-U?rel=0" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+
+        <!-- Video 6 -->
+        <div class="rounded-lg overflow-hidden shadow-lg">
+          <iframe class="w-full h-60" src="https://www.youtube.com/embed/ScMzIvxBSi4?rel=0" 
+                  title="YouTube video" frameborder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowfullscreen></iframe>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <!-- Example Cards Section -->
-  <section>
-    <div class="container">
-      <div class="section-head">
-        <h2>Latest Sermons</h2>
-        <span class="kicker">Be Inspired</span>
-      </div>
-      <div class="cards">
-        <div class="card">
-          <img src="sermon1.jpg" alt="Sermon 1">
-          <div class="body">
-            <h3>Faith Over Fear</h3>
-            <div class="meta">Pastor E | Aug 2025</div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="sermon2.jpg" alt="Sermon 2">
-          <div class="body">
-            <h3>Walking in Grace</h3>
-            <div class="meta">Pastor E | Aug 2025</div>
-          </div>
-        </div>
-        <div class="card">
-          <img src="sermon3.jpg" alt="Sermon 3">
-          <div class="body">
-            <h3>Power of Prayer</h3>
-            <div class="meta">Pastor E | Aug 2025</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      &copy; 2025 GHOR Ministry. All rights reserved.
-    </div>
-  </footer>
-  <script src="script.js"></script>
 </body>
 </html>
