@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>God's House of Refuge</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a2e0e6ad54.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="bg-blue-900 text-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      
+      <!-- Logo -->
+      <div class="flex items-center space-x-2">
+        <img src="./images/logo.jpg" alt="GHOR Logo" class="h-10 w-10 rounded-full">
+        <span class="text-xl font-bold">God's House of Refuge</span>
+      </div>
+
+      <!-- Nav links -->
+      <nav>
+        <ul class="hidden md:flex space-x-6 text-sm font-medium">
+          <li><a href="index.html" class="hover:text-yellow-300">Home</a></li>
+          <li><a href="living streams .html" class="hover:text-yellow-300">Daily Devotional</a></li>
+          <li><a href="adout us.html" class="hover:text-yellow-300">About Us</a></li>
+         <li><a href="media.html" class="hover:text-yellow-300">Media</a></li>
+          <li><a href="#give" class="hover:text-yellow-300">Give</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden flex flex-col space-y-1 focus:outline-none">
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+        <span class="block w-6 h-0.5 bg-white"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-800">
+      <ul class="flex flex-col space-y-3 px-4 py-3">
+        <li><a href="index.html" class="block hover:text-yellow-300">Home</a></li>
+        <li><a href="living streams .html" class="block hover:text-yellow-300">Daily Devotional</a></li>
+        <li><a href="about us.html" class="block hover:text-yellow-300">About Us</a></li>
+      <li><a href="media.html" class="block hover:text-yellow-300">Media</a></li>
+        <li><a href="#give" class="block hover:text-yellow-300">Give</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-16 px-6 bg-gray-100">
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        
+        <!-- First About GHOR -->
+        <div class="flex justify-center">
+          <img src="./images/mama.jpg" alt="GHOR Church" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg">
+        </div>
+        <div class="text-gray-700">
+          <h2 class="text-3xl font-bold text-blue-900 mb-4">About GHOR</h2>
+          <p class="mb-4">
+            God's House of Refuge (GHOR) Ministry is a vibrant community dedicated to sharing the love, hope, and power of Jesus Christ. Our mission is to reach out, restore, and empower lives through the Word of God, worship, and service.
+          </p>
+        </div>
+      </div>
+
+      <!-- Second About GHOR -->
+      <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center mt-16">
+        <div class="flex justify-center">
+
+<div class="flex justify-center items-center">
+  <img src="./images/pastor E.jpg" alt="GHOR Church" class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg">
+        </div>
+</div>
+        </div>
+        <div class="text-gray-700">
+          <h3 class="text-3xl font-semibold text-blue-600 mb-4">About GHOR</h3>
+          <h2 class="text-3xl font-bold text-black mb-4">A Family of Worship and Impact</h2>
+          <p class="mb-4">
+            God's House of Refuge is a family of passionate worshipers of God fueled by the hunger to change their world. With the paramount character of love, fidelity, accountability, and excellence, this family is committed to meeting the needs of their community through impactful programs which have been their identity over the years. Operating in a conducive atmosphere for spiritual growth and development, this family is structured to see to the individual maturity of the budding believer.
+          </p>
+
+          <!-- Vision -->
+          <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-2">Our Vision</h2>
+          <p class="text-gray-700 mb-6">
+            To be a beacon of light and refuge, transforming lives and communities for Christ.
+          </p>
+
+          <!-- Mission -->
+          <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-2">Our Mission</h2>
+          <p class="text-gray-700 mb-6">
+            To preach the gospel, nurture spiritual growth, and serve with compassion and excellence.
+          </p>
+
+          <!-- Leadership -->
+          <h2 class="text-xl font-semibold text-blue-700 mt-8 mb-4">Leadership Team</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-blue-900 text-white rounded-lg p-6 flex flex-col items-center shadow">
+              <img src="/images/pastorE.jpg" alt="Pastor Ezekiel" class="w-24 h-24 object-cover rounded-full mb-4 shadow-md">
+              <strong class="text-lg">Pastor Ezekiel</strong>
+              <div class="text-sm mt-1">Founding Pastor</div>
+            </div>
+            <div class="bg-blue-900 text-white rounded-lg p-6 flex flex-col items-center shadow">
+              <img src="/images/pastordara.jpeg" alt="Pastor Dr Dara smiling warmly, wearing formal attire, seated in a well-lit church office with bookshelves in the background, conveying a welcoming and compassionate atmosphere">
+              <strong class="text-lg">Pastor Dr. Dara</strong>
+              <div class="text-sm mt-1">Lead Pastor</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+ <footer class="bg-blue-900 text-white py-6 text-center">
+  <p> &copy; 2025 God's House of Refuge. All rights reserved.</p>
+  <div class="flex justify-center space-x-6 mt-3">
+    <a href="https://www.facebook.com/ghorefuge" target="_blank" class="hover:text-yellow-300 text-lg"><i class="fab fa-facebook"></i></a>
+    <a href="https://instagram.com" target="_blank" class="hover:text-yellow-300 text-lg"><i class="fab fa-instagram"></i></a>
+    <a href="mailto:contact@ghor.org" class="hover:text-yellow-300 text-lg"><i class="fas fa-envelope"></i></a>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
