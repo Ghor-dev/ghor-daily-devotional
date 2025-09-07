@@ -7,6 +7,21 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/a2e0e6ad54.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<style>
+ .animate-fadeInSlow {
+      animation: fadeInSlow 2s forwards;
+    }
+
+    @keyframes fadeInOut {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 0.8; }
+    }
+    .animate-fadeInOut {
+      animation: fadeInOut 6s ease-in-out infinite;
+    }
+
+    </style>
+
 </head>
 <body class="font-sans bg-gray-50 text-gray-800 scroll-smooth">
 
@@ -22,7 +37,7 @@
       <nav>
         <ul class="hidden md:flex space-x-6 text-sm font-medium">
           <li><a href="index.html" class="hover:text-yellow-300 transition">Home</a></li>
-          <li><a href="living_streams.html" class="hover:text-yellow-300 transition">Daily Devotional</a></li>
+          <li><a href="living streams.html" class="hover:text-yellow-300 transition">Daily Devotional</a></li>
           <li><a href="aboutus.html" class="hover:text-yellow-300 transition">About Us</a></li>
           <li><a href="media.html" class="hover:text-yellow-300 transition">Media</a></li>
           <li><a href="#give" class="hover:text-yellow-300 transition">Give</a></li>
@@ -52,134 +67,175 @@
   <!-- Hero Section -->
   <section id="home" class="relative w-full">
     <div class="relative w-full aspect-video md:h-[90vh] overflow-hidden">
-      <img src="./images/theme.jpg" alt="GHOR Background" class="absolute inset-0 w-full h-full object-cover" />
+     <img src="./images/theme.jpg" alt="GHOR background"
+         class="absolute inset-0 w-full h-full object-cover animate-fadeInOut" />
       <div class="absolute inset-0 bg-white bg-opacity-60"></div>
       <div class="absolute inset-0 flex flex-col items-center justify-center text-center text-blue-900 px-4 z-10">
         <h1 class="text-3xl md:text-5xl font-bold">Welcome to God's House of Refuge</h1>
         <p class="mt-4 text-lg italic">...raising change agents.</p>
-        <a href="https://www.facebook.com/ghorefuge" target="_blank" class="inline-block mt-6 px-6 py-3 bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-400 transition">
+        <a href="https://www.facebook.com/ghorefuge" target="_blank" class="inline-block mt-6 px-6 py-3 bg-red-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-400 transition">
           Watch Live
         </a>
       </div>
     </div>
   </section>
 
-  <!-- Daily Devotional -->
-  <section id="devotional" class="py-16 px-6 bg-gray-100 text-center">
-    <h2 class="text-3xl font-bold text-blue-900 mb-10">Daily Devotional</h2>
-    <div class="max-w-7xl mx-auto grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-      <!-- Card -->
-<div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
-  <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
-    <span class="text-base">23</span>
-    <span>AUG</span>
-    <span>2025</span>
+   <!-- Devotional Card 1 -->
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
+      <span class="text-base">23</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
+    </div>
+    <!-- Content -->
+    <div class="p-4 flex-1 flex flex-col justify-between">
+      <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
+    </div>
   </div>
-  <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-    <img 
-      src="./images/livingstreams .png" 
-      alt="Devotional"
-      class="devotional-img max-h-full max-w-full w-auto h-auto object-contain cursor-pointer"data-href="./sep_livingstreams/1st_sep.html"/>
+
+  <!-- Devotional Card 2 -->
+  <div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
+      <span class="text-base">23</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
+    </div>
+    <!-- Content -->
+    <div class="p-4 flex-1 flex flex-col justify-between">
+      <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
+    </div>
   </div>
-  <div class="p-4 flex-1 flex flex-col justify-between">
-    <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-    <a href="living_streams.html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
+
+  <!-- Devotional Card 3 -->
+<div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
+    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
+      <span class="text-base">23</span>
+      <span>AUG</span>
+      <span>2025</span>
+    </div>
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
+    </div>
+    <!-- Content -->
+    <div class="p-4 flex-1 flex flex-col justify-between">
+      <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
+    </div>
   </div>
-</div>
 
-
-      <!--  cards 2-->
-<div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+  <!-- Devotional Card 4 -->
+   <div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
     <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
       <span class="text-base">23</span>
       <span>AUG</span>
       <span>2025</span>
     </div>
-    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-      <img src="./images/livingstreams .png" alt="Devotional"
-        class="max-h-full max-w-full w-auto h-auto object-contain" />
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
     </div>
+    <!-- Content -->
     <div class="p-4 flex-1 flex flex-col justify-between">
       <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-      <a href="living_streams .html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
     </div>
-</div>
+  </div>
 
-      <!--  cards 3-->
+  <!-- Devotional Card 5 -->
 <div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
     <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
       <span class="text-base">23</span>
       <span>AUG</span>
       <span>2025</span>
     </div>
-    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-      <img src="./images/livingstreams .png" alt="Devotional"
-        class="max-h-full max-w-full w-auto h-auto object-contain" />
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
     </div>
+    <!-- Content -->
     <div class="p-4 flex-1 flex flex-col justify-between">
       <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-      <a href="living_streams.html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
     </div>
-</div>
+  </div>
 
-  <!--  cards 4-->
+  <!-- Devotional Card 6 -->
 <div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
+    <!-- Date Badge -->
     <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
       <span class="text-base">23</span>
       <span>AUG</span>
       <span>2025</span>
     </div>
-    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-      <img src="./images/livingstreams .png" alt="Devotional"
-        class="max-h-full max-w-full w-auto h-auto object-contain" />
+    <!-- Image -->
+    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center overflow-hidden">
+      <img 
+        src="./images/livingstreams .png" 
+        alt="Devotional" 
+        class="object-contain w-full h-full transition duration-500 transform hover:scale-110 animate-fadeInSlow"
+        style="animation: fadeInSlow 2s ease forwards;"
+      />
     </div>
+    <!-- Content -->
     <div class="p-4 flex-1 flex flex-col justify-between">
       <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-      <a href="living_streams.html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
+      <a href="./sep_livingstreams/1st_sep.html" class="text-blue-700 font-semibold hover:underline mt-auto">
+        Read
+      </a>
     </div>
-</div>
+  </div>
 
-
-            <!--  cards 5-->
-<div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
-    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
-      <span class="text-base">23</span>
-      <span>AUG</span>
-      <span>2025</span>
-    </div>
-    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-      <img src="./images/livingstreams .png" alt="Devotional"
-        class="max-h-full max-w-full w-auto h-auto object-contain" />
-    </div>
-    <div class="p-4 flex-1 flex flex-col justify-between">
-      <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-      <a href="living_streams.html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
-    </div>
-</div>
-
-
-
-            <!--  cards 6-->
-<div class="bg-white shadow-md rounded-lg overflow-hidden relative flex flex-col min-h-[340px] sm:min-h-[380px]">
-    <div class="absolute top-4 left-0 bg-blue-700 text-white px-2 py-2 text-xs font-bold rounded-r-md flex flex-col items-center leading-tight z-10">
-      <span class="text-base">23</span>
-      <span>AUG</span>
-      <span>2025</span>
-    </div>
-    <div class="relative w-full h-56 sm:h-64 md:h-72 bg-gray-100 flex items-center justify-center">
-      <img src="./images/livingstreams .png" alt="Devotional"
-        class="max-h-full max-w-full w-auto h-auto object-contain" />
-    </div>
-    <div class="p-4 flex-1 flex flex-col justify-between">
-      <h2 class="text-lg font-bold mb-2">MONEY ON A MISSION</h2>
-      <a href="living_streams.html" class="text-blue-700 font-semibold hover:underline mt-auto">Read</a>
-    </div>
-</div>
-
-
-    </div>
-    <a href="living_streams.html" class="inline-block mt-10 px-6 py-3 bg-yellow-500 text-black font-medium rounded-lg shadow-md hover:bg-yellow-400 transition">View More</a>
-  </section>
 
   <!-- About Us -->
   <section id="about" class="py-16 px-6 bg-white">
@@ -265,5 +321,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
-

@@ -79,6 +79,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
+
+
+
 const devotionalImages = document.querySelectorAll("./livingstreams .png");
 const overlay = document.getElementById("wave-overlay");
 
